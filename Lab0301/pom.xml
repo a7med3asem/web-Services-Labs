@@ -7,7 +7,7 @@
     <artifactId>SOAP-D2</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>SOAP Day 2</name>
+    <name>SOAP Day 3</name>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>11</maven.compiler.release>
@@ -59,20 +59,7 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.23</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>5.8.0-M1</version>
-            <scope>compile</scope>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.8.0-M1</version>
-            <scope>test</scope>
-        </dependency>
+        
     </dependencies>
     <build>
         <!-- Name of the Generated WAR Artifact -->
@@ -105,52 +92,7 @@
                     <password>ahmed</password>
                     <url>http://localhost:9191/manager/text</url>
                     <server>TomcatServer</server>
-                    <path>/Lab0201_SOAP</path>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>com.sun.xml.ws</groupId>
-                <artifactId>jaxws-maven-plugin</artifactId>
-                <version>3.0.0</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>wsimport</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <!-- The name of your generated source package -->
-                    <packageName>com.asim.services.employeeservice</packageName>
-                    <sourceDestDir>src/main/java</sourceDestDir>
-                    <!-- <wsdlFiles>
-                        <wsdlFile>a.wsdl</wsdlFile>
-                    </wsdlFiles> -->
-                    <wsdlUrls>http://localhost:9191/Lab0101_SOAP/ws/EmployeeService?wsdl</wsdlUrls>
-                    <!-- <wsdlLocation>http://localhost:9191/Lab0101_SOAP/ws/EmployeeService?wsdl</wsdlLocation> -->
-                </configuration>
-                <!-- if you want to use a specific version of JAX-WS/Jakarta XML Web Services, you can do so like this -->
-                <dependencies>
-                    <dependency>
-                        <groupId>com.sun.xml.ws</groupId>
-                        <artifactId>jaxws-tools</artifactId>
-                        <version>3.0.0-M2</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <version>3.0.0</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>java</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <mainClass>com.asim.Main</mainClass>
+                    <path>/Lab0301_SOAP</path>
                 </configuration>
             </plugin>
         </plugins>

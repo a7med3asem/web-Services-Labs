@@ -1,28 +1,42 @@
 package eg.gov.iti.jets.handlers;
 
+import jakarta.xml.ws.*;
 import jakarta.xml.ws.handler.*;
 
 public class MyLogicalHandler implements LogicalHandler<LogicalMessageContext> {
     @Override
-    public boolean handleMessage(LogicalMessageContext messageContext) {
-        Boolean outboundProperty = (Boolean) messageContext.get(MessageContext.MESSAGE_OUTBOUND_PROPERTY);
-        if (outboundProperty.booleanValue()) {
-            System.out.println("\nOutbound message:");
-        } else {
-            System.out.println("\nInbound message:");
-        }
+    public void close(MessageContext arg0) {
 
-        System.out.println("** Response: " + messageContext.getMessage().toString());
-        return true;
     }
 
     @Override
-    public boolean handleFault(LogicalMessageContext messageContext) {
-        return true;
+    public boolean handleFault(LogicalMessageContext arg0) {
+        return false;
     }
 
     @Override
-    public void close(MessageContext messageContext) {
-        System.out.println("Handler closed");
+    public boolean handleMessage(LogicalMessageContext arg0) {
+        System.out.println("from Logical Handler");
+        System.out.println(arg0);
+        return true;
     }
+
+    // @Override
+    // public boolean handleMessage(LogicalMessageContext messageContext) {
+    // LogicalMessage message = messageContext.getMessage();
+    // System.out.println("Message content");
+    // System.out.println(">>>> " + message.getPayload());
+    // return true;
+    // }
+
+    // @Override
+    // public boolean handleFault(LogicalMessageContext messageContext) {
+    // System.out.println("handleFault");
+    // return true;
+    // }
+
+    // @Override
+    // public void close(MessageContext messageContext) {
+    // System.out.println("Handler closed");
+    // }
 }

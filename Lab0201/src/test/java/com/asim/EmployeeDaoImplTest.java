@@ -60,6 +60,7 @@ public class EmployeeDaoImplTest {
     }
 
     @Test
+    @Disabled
     public void testDeleteEmployee() {
         System.out.println("test case delete employee");
 
@@ -71,6 +72,7 @@ public class EmployeeDaoImplTest {
     }
 
     @Test
+    @Disabled
     public void testGetEmployee() {
         System.out.println("test case get employee");
         try {

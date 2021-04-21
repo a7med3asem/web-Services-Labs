@@ -32,25 +32,25 @@ public interface EmployeeService {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "addEmployee", targetNamespace = "http://services.jets.iti.gov.eg/", className = "com.asim.services.employeeservice.AddEmployee")
-    @ResponseWrapper(localName = "addEmployeeResponse", targetNamespace = "http://services.jets.iti.gov.eg/", className = "com.asim.services.employeeservice.AddEmployeeResponse")
-    @Action(input = "http://services.jets.iti.gov.eg/EmployeeService/addEmployeeRequest", output = "http://services.jets.iti.gov.eg/EmployeeService/addEmployeeResponse")
-    public boolean addEmployee(
+    @RequestWrapper(localName = "deleteEmployee", targetNamespace = "http://services.jets.iti.gov.eg/", className = "com.asim.services.employeeservice.DeleteEmployee")
+    @ResponseWrapper(localName = "deleteEmployeeResponse", targetNamespace = "http://services.jets.iti.gov.eg/", className = "com.asim.services.employeeservice.DeleteEmployeeResponse")
+    @Action(input = "http://services.jets.iti.gov.eg/EmployeeService/deleteEmployeeRequest", output = "http://services.jets.iti.gov.eg/EmployeeService/deleteEmployeeResponse")
+    public boolean deleteEmployee(
         @WebParam(name = "arg0", targetNamespace = "")
-        Employee arg0);
+        int arg0);
 
     /**
      * 
      * @param arg0
      * @return
-     *     returns boolean
+     *     returns com.asim.services.employeeservice.Employee
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "deleteEmployee", targetNamespace = "http://services.jets.iti.gov.eg/", className = "com.asim.services.employeeservice.DeleteEmployee")
-    @ResponseWrapper(localName = "deleteEmployeeResponse", targetNamespace = "http://services.jets.iti.gov.eg/", className = "com.asim.services.employeeservice.DeleteEmployeeResponse")
-    @Action(input = "http://services.jets.iti.gov.eg/EmployeeService/deleteEmployeeRequest", output = "http://services.jets.iti.gov.eg/EmployeeService/deleteEmployeeResponse")
-    public boolean deleteEmployee(
+    @RequestWrapper(localName = "getEmployee", targetNamespace = "http://services.jets.iti.gov.eg/", className = "com.asim.services.employeeservice.GetEmployee")
+    @ResponseWrapper(localName = "getEmployeeResponse", targetNamespace = "http://services.jets.iti.gov.eg/", className = "com.asim.services.employeeservice.GetEmployeeResponse")
+    @Action(input = "http://services.jets.iti.gov.eg/EmployeeService/getEmployeeRequest", output = "http://services.jets.iti.gov.eg/EmployeeService/getEmployeeResponse")
+    public Employee getEmployee(
         @WebParam(name = "arg0", targetNamespace = "")
         int arg0);
 
@@ -73,15 +73,15 @@ public interface EmployeeService {
      * 
      * @param arg0
      * @return
-     *     returns com.asim.services.employeeservice.Employee
+     *     returns boolean
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "getEmployee", targetNamespace = "http://services.jets.iti.gov.eg/", className = "com.asim.services.employeeservice.GetEmployee")
-    @ResponseWrapper(localName = "getEmployeeResponse", targetNamespace = "http://services.jets.iti.gov.eg/", className = "com.asim.services.employeeservice.GetEmployeeResponse")
-    @Action(input = "http://services.jets.iti.gov.eg/EmployeeService/getEmployeeRequest", output = "http://services.jets.iti.gov.eg/EmployeeService/getEmployeeResponse")
-    public Employee getEmployee(
+    @RequestWrapper(localName = "addEmployee", targetNamespace = "http://services.jets.iti.gov.eg/", className = "com.asim.services.employeeservice.AddEmployee")
+    @ResponseWrapper(localName = "addEmployeeResponse", targetNamespace = "http://services.jets.iti.gov.eg/", className = "com.asim.services.employeeservice.AddEmployeeResponse")
+    @Action(input = "http://services.jets.iti.gov.eg/EmployeeService/addEmployeeRequest", output = "http://services.jets.iti.gov.eg/EmployeeService/addEmployeeResponse")
+    public boolean addEmployee(
         @WebParam(name = "arg0", targetNamespace = "")
-        int arg0);
+        Employee arg0);
 
 }

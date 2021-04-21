@@ -56,16 +56,19 @@ Content-Type: text/xml
 
 ###
 
-POST http://localhost:9191/SOAP-D1/ws/EmployeeService HTTP/1.1
+POST http://localhost:9191/Lab0301_SOAP/ws/EmployeeService HTTP/1.1
 Content-Type: text/xml
 
 <soap:Envelope
     xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-    xmlns:jets="http://jets.iti.gov.eg/">
+    xmlns:jets="http://services.jets.iti.gov.eg/">
     
+    # <soap:Header>
+        
+    # </soap:Header>
     <soap:Body>
         <jets:getEmployee>
-            <arg0>5</arg0>
+        <arg0>30</arg0>
         </jets:getEmployee>
     </soap:Body>
 
