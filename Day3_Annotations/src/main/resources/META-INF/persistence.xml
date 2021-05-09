@@ -9,7 +9,7 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <!-- Specify the data source for JDBC -->
         <jta-data-source>java:/comp/env/jdbc/SOAPDB</jta-data-source>
-        <class>eg.gov.iti.jets.dao.Employee</class>
+        <class>com.soap.entity.Employee</class>
         <properties>
             <!--  dialect to be mysql  -->
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>

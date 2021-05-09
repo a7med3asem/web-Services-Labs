@@ -1,4 +1,4 @@
-package eg.gov.iti.jets.entity;
+package com.soap.entity;
 
 import javax.persistence.*;
 import java.io.*;

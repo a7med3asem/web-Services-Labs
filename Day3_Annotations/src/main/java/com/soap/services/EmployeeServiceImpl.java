@@ -1,10 +1,12 @@
-package eg.gov.iti.jets.services;
+package com.soap.services;
 
-import eg.gov.iti.jets.entity.Employee;
+import com.soap.repositories.EmployeeRepository;
+import com.soap.repositories.EmployeeRepositoryImpl;
+import com.soap.entity.Employee;
 
 import jakarta.jws.*;
 
-@WebService(endpointInterface = "eg.gov.iti.jets.services.EmployeeService", name = "NewEmployeeService", serviceName = "NewServie", portName = "NewPort", targetNamespace = "NewTargetNameSpace")
+@WebService(endpointInterface = "com.soap.services.EmployeeService", name = "NewEmployeeService", serviceName = "NewServie", portName = "NewPort", targetNamespace = "NewTargetNameSpace")
 public class EmployeeServiceImpl implements EmployeeService {
 
     @Override

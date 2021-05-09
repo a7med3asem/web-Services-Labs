@@ -1,6 +1,6 @@
-package eg.gov.iti.jets.repositories;
+package com.soap.repositories;
 
-import eg.gov.iti.jets.entity.Employee;
+import com.soap.entity.Employee;
 
 public interface EmployeeRepository {
     void addEmployee(Employee employee);

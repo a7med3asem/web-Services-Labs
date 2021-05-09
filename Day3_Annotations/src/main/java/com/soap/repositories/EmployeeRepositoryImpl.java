@@ -1,10 +1,10 @@
-package eg.gov.iti.jets.repositories;
+package com.soap.repositories;
 
 import javax.persistence.*;
 
-import eg.gov.iti.jets.entity.Employee;
+import com.soap.entity.Employee;
 
-public class EmployeeRepositoryImpl implements EmployeeRepository{
+public class EmployeeRepositoryImpl implements EmployeeRepository {
 
     EntityManagerFactory managerFactory = Persistence.createEntityManagerFactory("Lab0101");
     EntityManager manager = managerFactory.createEntityManager();
