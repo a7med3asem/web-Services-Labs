@@ -1,4 +1,4 @@
-package eg.gov.iti.jets.dao;
+package eg.gov.iti.jets.entity;
 
 import javax.persistence.*;
 import java.io.*;

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Day1_GettingStarted:war">
+    <output-path>$PROJECT_DIR$/Day1_GettingStarted/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Day1_GettingStarted</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Day1_GettingStarted-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Day1_GettingStarted:war exploded" />
+    </root>
+  </artifact>
+</component>

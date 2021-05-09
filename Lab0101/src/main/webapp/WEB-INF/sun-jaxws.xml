@@ -2,6 +2,6 @@
 <endpoints xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime" version="2.0">
     <endpoint
             name="Employee"
-            implementation="eg.gov.iti.jets.services.EmployeeServiceImpl"
+            implementation="EmployeeServiceImpl"
             url-pattern="/ws/EmployeeService"/>
 </endpoints>

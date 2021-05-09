@@ -2,7 +2,7 @@ package eg.gov.iti.jets.repositories;
 
 import javax.persistence.*;
 
-import eg.gov.iti.jets.dao.Employee;
+import eg.gov.iti.jets.entity.Employee;
 
 public class EmployeeRepositoryImpl implements EmployeeRepository{
 

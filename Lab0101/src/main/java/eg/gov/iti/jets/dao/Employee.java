@@ -1,4 +1,4 @@
-package eg.gov.iti.jets.dao;
+package eg.gov.iti.jets.entity;
 
 import javax.persistence.*;
 import java.io.*;
@@ -17,13 +17,7 @@ public class Employee implements Serializable{
     private String lastName;
 
     public Employee() {
-
     }
-
-    // public Employee(String firstName, String lastName) {
-    //     this.firstName = firstName;
-    //     this.lastName = lastName;
-    // }
 
     public void setId(int id) {
         this.id = id;

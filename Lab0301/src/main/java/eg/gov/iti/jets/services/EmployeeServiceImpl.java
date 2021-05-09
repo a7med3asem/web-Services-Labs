@@ -1,7 +1,6 @@
 package eg.gov.iti.jets.services;
 
-import eg.gov.iti.jets.dao.Employee;
-import eg.gov.iti.jets.repositories.*;
+import eg.gov.iti.jets.entity.Employee;
 
 import jakarta.jws.*;
 
