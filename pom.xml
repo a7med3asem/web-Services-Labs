@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>Day1_GettingStarted</module>
+        <module>Day2_Client_Side</module>
     </modules>
 
     <packaging>pom</packaging>
